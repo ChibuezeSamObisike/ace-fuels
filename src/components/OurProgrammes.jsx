@@ -1,49 +1,60 @@
 import React from "react";
-import { Box, Typography } from "@mui/material";
-import { pxToRem } from "utils/pxToRem";
-import Img1 from "assets/Rectangle 568.jpg";
-import Img2 from "assets/Rectangle 569.jpg";
-import Img3 from "assets/Rectangle 570.jpg";
+import Img1 from "assets/Rectangle 576.jpg";
+import Img2 from "assets/Rectangle 575.jpg";
+import Img3 from "assets/Rectangle 574.jpg";
+import Img4 from "assets/Rectangle 573.jpg";
+import Img5 from "assets/Rectangle 572.jpg";
 
-export default function MainActivities() {
+import { Box, Typography } from "@mui/material";
+
+import { pxToRem } from "utils/pxToRem";
+
+export default function OurProgrammes() {
   const listImg = [
     {
       img: Img1,
-      title: "Education",
+      title: "Nanotechnology",
     },
     {
       img: Img2,
-      title: "Applied Research",
+      title: "Future Energies",
     },
     {
       img: Img3,
-      title: "Short courses",
+      title: "Corrosion Technology ",
+    },
+    {
+      img: Img4,
+      title: "Electrochemical Technology",
+    },
+    {
+      img: Img5,
+      title: "Executive Master of Science (MSc) programmes",
     },
   ];
   return (
-    <Box mt={6}>
+    <Box mt={6} width='100%'>
       <Box mx={{ xs: 3, md: 24 }}>
         <Typography color='#717171' fontSize={pxToRem(32)} fontWeight='bold'>
-          Main Activities
+          Our programmes
         </Typography>
         <Box
           display='flex'
+          width='100%'
           flexDirection={{
             xs: "column",
             md: "row",
           }}
-          alignItems='center'
+          alignItems='unset'
           justifyContent='space-between'
         >
           {listImg.map((x) => (
-            <Box p={4} border='1px solid #D4D4D4' borderRadius='15px' m={1}>
+            <Box m={1}>
               <Box>
-                <img height='264px' width='auto' src={x.img} alt='img' />
+                <img height='322px' width='auto' src={x.img} alt='img' />
                 <Typography
                   color='#2A2A2A'
-                  textAlign='center'
                   fontSize={pxToRem(20)}
-                  mt={2}
                   fontWeight={400}
                 >
                   {x.title}

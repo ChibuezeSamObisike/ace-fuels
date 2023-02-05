@@ -14,6 +14,7 @@ export default function About() {
           display='flex'
           alignItems='baseline'
           justifyContent='space-between'
+          flexDirection={{ md: "row", xs: "column" }}
           mt={3}
         >
           <Box mr={2}>
@@ -30,7 +31,7 @@ export default function About() {
               challenge of poor availability and access to energy.{" "}
             </Typography>
           </Box>
-          <Box>
+          <Box mt={{ xs: 10, md: 0 }}>
             <Typography color='#4E4E4E' variant='subtitle1'>
               The center focuses on four core areas of discipline namely; Clean
               & Future Energy, Electrochemical Systems, Nanotechnology and
