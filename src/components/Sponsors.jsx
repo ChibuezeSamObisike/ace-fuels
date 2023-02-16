@@ -1,6 +1,13 @@
 import React from "react";
 
 import { Box } from "@mui/material";
+import afdImg from "assets/afd.png";
+import worldBankImg from "assets/world-bank-group.png";
+import ecowasImg from "assets/ecowas.png";
+import aauImg from "assets/aau.png";
+import himinImg from "assets/him.png";
+import futoImg from "assets/futo.png";
+import schienderImg from "assets/schenider.png";
 
 export default function Sponsors() {
   return (
@@ -15,7 +22,17 @@ export default function Sponsors() {
       mt={-5}
       boxShadow='0px 1px 10px rgba(0, 0, 0, 0.15);'
     >
-      Hello world
+      {[
+        afdImg,
+        worldBankImg,
+        ecowasImg,
+        aauImg,
+        himinImg,
+        futoImg,
+        schienderImg,
+      ].map((x) => (
+        <img src={x} alt='' width='100px' />
+      ))}
     </Box>
   );
 }

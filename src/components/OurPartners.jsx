@@ -7,7 +7,7 @@ import himinImg from "assets/him.png";
 import futoImg from "assets/futo.png";
 import schienderImg from "assets/schenider.png";
 
-import { Box, Container, Grid, Typography } from "@mui/material";
+import { Box, Grid, Typography } from "@mui/material";
 
 import { pxToRem } from "utils/pxToRem";
 
@@ -23,7 +23,6 @@ export default function OurPartners() {
   ];
   return (
     <Box mt={6} mx={{ xs: 3, md: 24 }}>
-      {/* <Container> */}
       <Typography color='#717171' fontSize={pxToRem(32)} fontWeight='bold'>
         Our Partners
       </Typography>
@@ -34,7 +33,6 @@ export default function OurPartners() {
           </Grid>
         ))}
       </Grid>
-      {/* </Container> */}
     </Box>
   );
 }
