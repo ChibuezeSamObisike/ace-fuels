@@ -42,11 +42,11 @@ const Navbar = () => {
   ];
 
   const sublinks = [
-    { path: "", label: "Home" },
-    { path: "", label: "People" },
-    { path: "", label: "Programmes" },
+    { path: "/", label: "Home" },
+    { path: "/people", label: "People" },
+    { path: "/programmes", label: "Programmes" },
     { path: "", label: "E-GRM" },
-    { path: "", label: "Ace Impact" },
+    { path: "/ace-impact", label: "Ace Impact" },
     { path: "", label: "Partnerships" },
     { path: "", label: "Admissions" },
     { path: "", label: "About us" },
